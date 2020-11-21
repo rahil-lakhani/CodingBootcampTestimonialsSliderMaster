@@ -1,0 +1,271 @@
+/****** Default & General Styling ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-color: #F4F4FC;
+    color: hsl(240, 38%, 20%);
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
+
+/*** Wrapper ***/
+
+.wrapper {
+    min-width: 375px;
+    max-width: 375px;
+}
+
+
+/*** Testimonials Slider - Testimonial Container ***/
+
+main {
+    background: white url(../images/pattern-curve.svg) no-repeat left bottom;
+    background-size: 65%;
+    overflow: hidden;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial-profile {
+    background: url(../images/pattern-bg.svg) no-repeat center;
+    background-size: 100% 100%;
+    margin: 25px 27px 30px;
+}
+
+.testimonial-profile img {
+    border-radius: 5px;
+    box-shadow: -25px 65px 50px -65px hsl(240, 38%, 20%);
+    height: 240px;
+    width: 250px;
+    margin: 28px auto 17px;
+}
+
+.testimonial-text {
+    background: url(../images/pattern-quotes.svg) no-repeat top;
+    background-size: 60px;
+    margin: 0 29px;
+}
+
+h1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.30;
+    opacity: 0.9;
+    padding: 27px 0 20px;
+}
+
+h2 {
+    font-size: 0.90rem;
+    padding-bottom: 3px;
+}
+
+h3 {
+    color: hsl(240, 18%, 77%);
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+
+/*** Next and Previous Buttons - Testimonials Slider ***/
+
+
+.button-container {
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    left: 148px;
+    overflow: hidden;
+    position: absolute;
+    top: 273px;
+    width: 80px;
+}
+
+.button-container a {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: 0.6s ease;
+    width: 40px;
+}
+
+.button-container img {
+    width: 10px;
+    height: 14px;
+}
+
+.button-container a:hover {
+    background-color: hsl(240, 18%, 85%);
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*** Attribution ***/
+
+.attribution {
+    color: hsl(240, 18%, 65%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.attribution strong {
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+
+@media (min-width:960px) {
+
+    /****** Default & General Styling ******/
+
+    body {
+        min-height: 100vh;
+        min-width: 100vh;
+    }
+
+    /*** Wrapper ***/
+
+    main,
+    .wrapper {
+        max-width: 1440px;
+    }
+
+    /*** Testimonials Slider - Testimonial Container ***/
+
+    main {
+        background-size: 40%;
+        padding-bottom: 50px;
+        margin: 0 auto 2px;
+    }
+
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 50px 80px 0;
+    }
+
+
+    .testimonial-profile {
+        margin: 0 0 30px;
+        width: 55%;
+        padding: 27px 0 23px;
+    }
+
+    .testimonial-profile img {
+        box-shadow: 5px 45px 70px -50px hsl(240, 38%, 20%);
+        height: 480px;
+        width: 480px;
+    }
+
+    .testimonial-text {
+        background-position: 95px 0;
+        background-size: 115px;
+        margin: 0;
+        width: 52%;
+        margin: 130px -150px 0 0;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+        padding: 65px 0 40px;
+    }
+
+    .testimonial-title {
+        display: flex;
+        align-items: baseline;
+    }
+
+    h2 {
+        font-size: 1.20rem;
+        padding: 0 10px 0 0;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+
+    /*** Next and Previous Buttons - Testimonials Slider ***/
+
+
+    .button-container {
+        border-radius: 30px;
+        height: 48px;
+        left: 755px;
+        top: 560px;
+        width: 100px;
+    }
+
+    .button-container a {
+        height: 48px;
+        width: 50px;
+    }
+
+    .button-container img {
+        width: 12px;
+        height: 16px;
+    }
+
+}
